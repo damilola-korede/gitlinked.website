@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contact Us</title>
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <body>
+        <div class="header">
+            <div><span style="font-size: 36px;">
+                get<span style="color:#D434FE;
+                font-size: 36px;
+                ">linked</span></span></div>
+            <div class="header-sec">
+                <div>Timeline</div>
+                <div>Overview</div>
+                <div>FaQs</div>
+                <div>Contact</div>
+                <div><button>Register</button></div>
+            </div>
+        </div>
+   
+        <div class= "contact-section">
+            <div>
+                <p class="touch">
+                Get in touch</p>
+                <p class="contact">Contact </br> Information </p>
+                <p class="contact"> 
+                    27,Alara Street</br>
+                    Yaba 100012</br>
+                    Lagos State
+                </p>
+                    <p class="contact">Call Us : 07067981819</p>
+                    <p class="contact">we are open from Monday-Friday</br>
+                        08:00am - 05:00pm</p>
+                    <p class="follow"><span style="color: #D434FE;">Share on</span></p>
+            </div> 
+            <div>
+                <div class="trans">
+                    <p>Questions or need assistance?</br>
+                        Let us know about it!</p>
+                   <form id="form"  class="myForm">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Mail">
+                    <input class="message" type="text" placeholder="Message">
+                    <button type="submit" class="submit">Submit</button>
+                </form>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+  
+         const myForm =  document.querySelector('.myForm');
+
+         myForm.addEventListener("submit",
+             (e)=>{ e.preventDefault();
+
+                const formData = new FormData(this);
+
+                fetch('https://backend.getlinked.ai//hackathon/contact-form',
+                {
+                    method: 'post',
+                    body: formData
+                }).then(function (response){
+                    return response.text ();
+                }).then(function(text){
+                    console.log(text);
+                })
+            
+            });
+        </script>
+    </body>
+</html>

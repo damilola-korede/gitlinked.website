@@ -1,0 +1,75 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    column-gap: 350px;
+    align-items: center;
+    padding-top: 80px;
+    width: 1512px;
+    margin-left: 150px;
+}
+.header-sec {
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+}
+body {
+    background-image: url("img/Contact page.png") ;
+    background-repeat: no-repeat;
+    color: white;
+    width: 1512px;
+    font-size: 15px;
+    font-family: Montserrat;
+    }
+
+    button {
+        color: white;
+        width:100px;
+        padding: 10px;
+        border-radius: 5px;
+        background-image: 
+        linear-gradient(to left, #903AFF, #D434FE, #FE34B9);
+        
+    }
+    .contact-section {
+        display: grid;
+        grid-template-columns: 450px 1fr;
+        margin-left: 150px;
+        column-gap: 50px;
+        margin-bottom: 100px;
+    }
+    
+    .submit {
+        margin-left: 150px;
+        width: 200px;
+        padding: 20px;
+    }
+    .touch {
+        margin-top: 150px;
+        font-size: 32px;
+        color: #D434FE;
+    }
+    .contact {
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+    
+    
+    .trans {
+        margin-top: 100px;
+        background-color: rgba(212, 52, 254, 6%);
+        padding-left:  100px;
+        padding-top: 75px;
+        padding-bottom: 69px;
+        margin-right: 150px;
+    }
+   input {
+    display: block;
+    width: 437px;
+    margin-bottom: 42px;
+    padding: 20px;
+    background-color: rgba(212, 52, 254, 6%);
+    border-style: solid;
+   }
+   .message {
+    height: 119px;
+   }
